@@ -1,0 +1,13 @@
+sum = 0 
+while(True):
+    userInput = input("enter the item price or press q for quit\n")
+    if userInput != "q":
+        try:
+            sum = sum +int(userInput)
+        except Exception as e:
+            print("Please add an integer values")
+            continue
+    else:
+        print("Thanks")
+        print(f"Total amount: {sum}")
+        break
